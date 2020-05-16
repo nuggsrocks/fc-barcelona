@@ -1,5 +1,100 @@
 @import "~bootstrap/scss/bootstrap";
 
+$barca-red: #A60042;
+$barca-blue: #004C99;
+$barca-yellow: #EEBC00;
+
 body {
-  background-color: white;
+  background-color: lightgray;
+}
+
+h1 {
+  color: $barca-blue;
+}
+
+em.competitions {
+  font-weight: bold;
+}
+
+em.names {
+  font-style: normal;
+  font-weight: bold;
+  color: $barca-red;
+}
+
+em.grounds {
+  font-weight: bold;
+  color: $barca-blue;
+}
+
+h2 {
+  color: $barca-red;
+  text-shadow: .25px .25px $barca-blue,
+  .5px .5px $barca-blue,
+  .75px .75px $barca-blue,
+  1px 1px $barca-blue,
+  1.25px 1.25px $barca-blue,
+  1.5px 1.5px $barca-blue;
+}
+
+code {
+  color: black;
+  background-color: $barca-yellow;
+  padding: 2px;
+}
+.barca-btn {
+  color: $barca-red;
+  transition: 1s;
+}
+.barca-btn:hover, .barca-btn:focus {
+  color: white;
+  background-color: $barca-red;
+}
+#barca-player-function-result {
+  font-size: 50px;
+  color: $barca-yellow;
+  text-shadow: 1px 0px black,
+  0px 1px black,
+  -1px 0px black,
+  0px -1px black,
+  1px 1px black,
+  1px -1px black,
+  -1px -1px black,
+  -1px 1px black;
+}
+
+#barca-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+/* react transition group */
+.app-transition {
+  position: absolute;
+  padding-bottom: 75px;
+}
+.app-transition-enter {
+  opacity: 0;
+}
+.app-transition-enter-active {
+  opacity: 1;
+  transition: all 1000ms;
+}
+.app-transition-exit {
+  opacity: 1;
+}
+.app-transition-exit-active {
+  opacity: 0;
+  transition: all 1000ms;
+}
+
+@media only screen and (max-device-width: 414px) {
+  nav {
+    padding-bottom: 50px;
+  }
+  .barca-btn {
+    transition: 0s;
+  }
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import {BrowserRouter, Link, Route, Redirect} from 'react-router-dom';
-import './App.scss';
 import {CSSTransition} from 'react-transition-group';
 import History from './components/history.js';
 import Stadium from './components/stadium.js';
