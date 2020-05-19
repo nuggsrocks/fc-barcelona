@@ -113,8 +113,9 @@ const Menu = () => {
         <div>
             <div>
                 <img id={'barca-logo'}
-                     src={'https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png'}
-                     alt={'FC Barcelona Logo'} />
+                     src={'favicon.ico'}
+                     alt={'FC Barcelona Logo'}
+                />
             </div>
             <h1>Futbol Club Barcelona</h1>
             <nav>

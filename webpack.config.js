@@ -20,7 +20,6 @@ module.exports = {
         ]
     },
     devServer: {
-        contentBase: __dirname + '/client/dist',
-        historyApiFallback: true
+        contentBase: __dirname + '/client/dist'
     }
 }
