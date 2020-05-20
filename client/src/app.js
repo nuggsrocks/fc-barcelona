@@ -84,26 +84,24 @@ class App extends React.Component {
 
     render() {
         return (
-            <BrowserRouter>
-                <div className={'text-center p-5'}>
-                    <div className={'row'}>
-                        <div className={'col-md-3'}>
-                            <Menu
-                                history={() => this.handleChange(HISTORY)} stadium={() => this.handleChange(STADIUM)}
-                                rivals={() => this.handleChange(RIVALS)} fans={() => this.handleChange(FANS)}
-                                players={() => this.handleChange(PLAYERS)}
-                            />
-                        </div>
-                        <div className={'col-md-9'}>
-                            <Main
-                                history={this.state.history} stadium={this.state.stadium}
-                                rivals={this.state.rivals} fans={this.state.fans}
-                                players={this.state.players}
-                            />
-                        </div>
+            <div className={'text-center p-5'}>
+                <div className={'row'}>
+                    <div className={'col-md-3'}>
+                        <Menu
+                            history={() => this.handleChange(HISTORY)} stadium={() => this.handleChange(STADIUM)}
+                            rivals={() => this.handleChange(RIVALS)} fans={() => this.handleChange(FANS)}
+                            players={() => this.handleChange(PLAYERS)}
+                        />
+                    </div>
+                    <div className={'col-md-9'}>
+                        <Main
+                            history={this.state.history} stadium={this.state.stadium}
+                            rivals={this.state.rivals} fans={this.state.fans}
+                            players={this.state.players}
+                        />
                     </div>
                 </div>
-            </BrowserRouter>
+            </div>
         )
     }
 }
