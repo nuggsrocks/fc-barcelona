@@ -12,7 +12,7 @@ const Fans = () => {
                 as the spectators at the first stadium, Camp de la Ind&uacute;stria, sat with
                 their <em>cul&eacute;s</em> over the stand. In Spain, about 25% of the population
                 is said to be Bar&ccedil;a sympathisers, second behind archrival Real Madrid, supported by 32% of the population.
-                Throughout Europe, Barcelona is the favourite second-choice club. The club's membership figures have
+                Throughout Europe, Barcelona is the favourite second-choice club. The club&apos;s membership figures have
                 seen a significant increase from 100,000 in the 2003&ndash;04 season to 170,000 in September 2009.
                 FC Barcelona is one of few modern day football teams to be owned by its members.
             </p>

@@ -15,9 +15,9 @@ const Rivals = () => {
                 and their disagreements over the monarchy.
             </p>
             <p className={'barca-text'}>
-                Bar&ccedil;a's local rival has always been Espanyol. Being one of the clubs granted
+                Bar&ccedil;a&apos;s local rival has always been Espanyol. Being one of the clubs granted
                 royal patronage, Espanyol was founded exclusively by Spanish football fans, unlike the multinational
-                nature of Bar&ccedil;a's formation. This led to a strengthened rivalry due to the <em>Barcelonistas</em>'
+                nature of Bar&ccedil;a&apos;s formation. This led to a strengthened rivalry due to the <em>Barcelonistas</em>&apos;
                 hatred and distrust of the Spanish crown. Meanwhile, the founding message of Espanyol was clearly
                 anti-Barcelona, and they have disapprovingly viewed FC Barcelona as a team of foreigners.
                 The rivalry is known as <em className={'names'}>El Derbi Barcelon&iacute;</em>.

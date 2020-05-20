@@ -63,7 +63,7 @@ class Players extends React.Component {
         this.setState({
             output: kitNumber
         })
-    };
+    }
 
     render() {
         return (
@@ -79,7 +79,7 @@ class Players extends React.Component {
                 <p className={'barca-text'}>
                     Barcelona has employed many famous players, with
                     five <em className={'competitions'}>FIFA World Player of the Year</em> award winners and
-                    six <em className={'competitions'}>Ballon d'Or</em> winners among the previous and current Barcelona
+                    six <em className={'competitions'}>Ballon d&apos;Or</em> winners among the previous and current Barcelona
                     players. This makes Bar&ccedil;a the club with the most top player awards received all-time. In 2009,
                     Barcelona won an unprecedented sextuple by winning <em className={'competitions'}>La Liga</em>,
                     the <em className={'competitions'}>Copa del Rey</em>,
@@ -104,7 +104,7 @@ class Players extends React.Component {
 
 
                 <div id={'player-number-function'} className={'pt-4'}>
-                    <p className={'text-center barca-text'}>Input a current F.C. Barcelona player's name or number and get
+                    <p className={'text-center barca-text'}>Input a current F.C. Barcelona player&apos;s name or number and get
                         their name, kit number, and position.</p>
                     <div id={'input-controls'}>
                         <input id={'barca-player-input'} type={'text'} className={'form-control text-center'}
