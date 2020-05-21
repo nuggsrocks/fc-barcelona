@@ -2,18 +2,26 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
     entry: {
-        main: './src/index.js'
+        main: './src/index.js',
+        style: './src/scss/index.scss',
+        server: './src/server/server.js'
     },
     output: {
         path: __dirname + '/dist',
         publicPath: '/',
         filename: '[name].js'
     },
-    target: 'web',
+    target: 'node-webkit',
     mode: 'production',
+    node: {
+        __dirname: false,
+        __filename: false
+    },
+    externals: [nodeExternals()],
     optimization: {
         minimizer: [
             new UglifyJsPlugin({
