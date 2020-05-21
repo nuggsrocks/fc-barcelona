@@ -21,8 +21,17 @@ app.get('/*', (req, res) => {
     fs.readFile(indexFile, 'utf8', (err, data) => {
         if (err) {
             console.log(err);
-            return res.status(500).send('whoops! this page does not exist!');
+            return res.status(500).send('whoops! this page did not load correctly!');
         }
+
+        if (context.status === 404) {
+            res.status(404);
+        }
+
+        if (context.url) {
+            return res.redirect(301, context.url);
+        }
+
         return res.send(
             data.replace('<div id="root"></div>', `<div id="root">${app}</div>`)
         );

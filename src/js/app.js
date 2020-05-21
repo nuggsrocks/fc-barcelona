@@ -1,25 +1,9 @@
 import React from 'react';
-import {BrowserRouter, Link, Route, Redirect, Switch} from 'react-router-dom';
+import {Link, Redirect, Route, Switch} from 'react-router-dom';
 import {CSSTransition} from 'react-transition-group';
-import History from './components/history.js';
-import Stadium from './components/stadium.js';
-import Rivals from './components/rivals.js';
-import Fans from './components/fans.js';
-import Players from './components/players.js';
-
-const HISTORY = 'history';
-const STADIUM = 'stadium';
-const RIVALS = 'rivals';
-const FANS = 'fans';
-const PLAYERS = 'players';
-
-const routes = [
-    {path: '/barcelona/history', name: HISTORY, Component: History},
-    {path: '/barcelona/stadium', name: STADIUM, Component: Stadium},
-    {path: '/barcelona/rivals', name: RIVALS, Component: Rivals},
-    {path: '/barcelona/fans', name: FANS, Component: Fans},
-    {path: '/barcelona/players', name: PLAYERS, Component: Players}
-];
+import constants from './constants';
+import routes from './routes';
+import NotFound from './components/not-found';
 
 class App extends React.Component {
     constructor(props) {
@@ -35,7 +19,7 @@ class App extends React.Component {
     }
 
     handleChange(page) {
-        if (page === HISTORY) {
+        if (page === constants.HISTORY) {
             this.setState({
                 history: true,
                 stadium: false,
@@ -44,7 +28,7 @@ class App extends React.Component {
                 players: false
             })
         }
-        if (page === STADIUM) {
+        if (page === constants.STADIUM) {
             this.setState({
                 history: false,
                 stadium: true,
@@ -53,7 +37,7 @@ class App extends React.Component {
                 players: false
             })
         }
-        if (page === RIVALS) {
+        if (page === constants.RIVALS) {
             this.setState({
                 history: false,
                 stadium: false,
@@ -62,7 +46,7 @@ class App extends React.Component {
                 players: false
             })
         }
-        if (page === FANS) {
+        if (page === constants.FANS) {
             this.setState({
                 history: false,
                 stadium: false,
@@ -71,7 +55,7 @@ class App extends React.Component {
                 players: false
             })
         }
-        if (page === PLAYERS) {
+        if (page === constants.PLAYERS) {
             this.setState({
                 history: false,
                 stadium: false,
@@ -88,9 +72,9 @@ class App extends React.Component {
                 <div className={'row'}>
                     <div className={'col-md-3'}>
                         <Menu
-                            history={() => this.handleChange(HISTORY)} stadium={() => this.handleChange(STADIUM)}
-                            rivals={() => this.handleChange(RIVALS)} fans={() => this.handleChange(FANS)}
-                            players={() => this.handleChange(PLAYERS)}
+                            history={() => this.handleChange(constants.HISTORY)} stadium={() => this.handleChange(constants.STADIUM)}
+                            rivals={() => this.handleChange(constants.RIVALS)} fans={() => this.handleChange(constants.FANS)}
+                            players={() => this.handleChange(constants.PLAYERS)}
                         />
                     </div>
                     <div className={'col-md-9'}>
@@ -117,21 +101,11 @@ const Menu = () => {
             </div>
             <h1>Futbol Club Barcelona</h1>
             <nav>
-                <Link to={'/barcelona/history'} className={'btn btn-block barca-btn rounded-lg'}>
-                    History
-                </Link>
-                <Link to={'/barcelona/stadium'} className={'btn btn-block barca-btn rounded-lg'}>
-                    Stadium
-                </Link>
-                <Link to={'/barcelona/rivals'} className={'btn btn-block barca-btn rounded-lg'}>
-                    Rivalries
-                </Link>
-                <Link to={'/barcelona/fans'} className={'btn btn-block barca-btn rounded-lg'}>
-                    Fans
-                </Link>
-                <Link to={'/barcelona/players'} className={'btn btn-block barca-btn rounded-lg'}>
-                    Players
-                </Link>
+                {routes.map(({path, name}) =>
+                    <Link to={path} className={'btn btn-block barca-btn rounded-lg'}>
+                        {name}
+                    </Link>
+                )}
             </nav>
         </div>
     )
@@ -157,6 +131,7 @@ const Main = () => {
                         )}
                     </Route>
                 ))}
+                <Route component={NotFound}/>
             </Switch>
         </div>
     )
