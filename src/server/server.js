@@ -8,6 +8,10 @@ const fs = require('fs');
 
 const port = process.env.PORT;
 
+app.use((req, res, next) => {
+    console.log(req.method + ' - ' + req.path);
+    next();
+})
 app.use(express.static(__dirname));
 
 app.get('/*', (req, res) => {
