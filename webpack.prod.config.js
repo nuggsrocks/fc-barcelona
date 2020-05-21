@@ -13,13 +13,12 @@ module.exports = {
         filename: '[name].js'
     },
     target: 'web',
-    devtool: 'source-map',
     optimization: {
         minimizer: [
             new UglifyJsPlugin({
                 cache: true,
                 parallel: true,
-                sourceMap: true
+                sourceMap: false
             }),
             new OptimizeCSSAssetsPlugin({})
         ]
@@ -56,10 +55,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/html/index.html',
             filename: './index.html'
-        }),
-        new MiniCSSExtractPlugin({
-            filename: '[name].css',
-            chunkFilename: '[id].css'
         })
     ]
 
