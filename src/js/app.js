@@ -117,18 +117,7 @@ const Main = () => {
             <Switch>
                 {routes.map(({path, Component}) => (
                     <Route key={path} exact path={path}>
-                        {({match}) => (
-                            <CSSTransition
-                                in={match != null}
-                                timeout={1000}
-                                classNames={'app-transition'}
-                                unmountOnExit
-                            >
-                                <div className={'app-transition'}>
-                                    <Component />
-                                </div>
-                            </CSSTransition>
-                        )}
+                        <Component />
                     </Route>
                 ))}
                 <Route component={NotFound}/>

@@ -53,10 +53,10 @@ code {
 #barca-player-function-result {
   font-size: 50px;
   color: $barca-yellow;
-  text-shadow: 1px 0px black,
-  0px 1px black,
-  -1px 0px black,
-  0px -1px black,
+  text-shadow: 1px 0 black,
+  0 1px black,
+  -1px 0 black,
+  0 -1px black,
   1px 1px black,
   1px -1px black,
   -1px -1px black,
@@ -68,26 +68,6 @@ code {
   margin-left: auto;
   margin-right: auto;
   width: 75%;
-}
-
-/* react transition group */
-.app-transition {
-  position: absolute;
-  padding-bottom: 75px;
-}
-.app-transition-enter {
-  opacity: 0;
-}
-.app-transition-enter-active {
-  opacity: 1;
-  transition: all 1000ms;
-}
-.app-transition-exit {
-  opacity: 1;
-}
-.app-transition-exit-active {
-  opacity: 0;
-  transition: all 1000ms;
 }
 
 @media only screen and (max-device-width: 414px) {
