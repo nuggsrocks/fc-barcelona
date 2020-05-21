@@ -94,7 +94,7 @@ const Menu = () => {
         <div>
             <div>
                 <img id={'barca-logo'}
-                     src={'https://wallpapercave.com/wp/wp3179043.png'}
+                     src={'icon.png'}
                      alt={'FC Barcelona Logo'}
                 />
             </div>
