@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Link, Route, Redirect} from 'react-router-dom';
+import {BrowserRouter, Link, Route, Redirect, Switch} from 'react-router-dom';
 import {CSSTransition} from 'react-transition-group';
 import History from './components/history.js';
 import Stadium from './components/stadium.js';
@@ -84,26 +84,24 @@ class App extends React.Component {
 
     render() {
         return (
-            <BrowserRouter>
-                <div className={'text-center p-5'}>
-                    <div className={'row'}>
-                        <div className={'col-md-3'}>
-                            <Menu
-                                history={() => this.handleChange(HISTORY)} stadium={() => this.handleChange(STADIUM)}
-                                rivals={() => this.handleChange(RIVALS)} fans={() => this.handleChange(FANS)}
-                                players={() => this.handleChange(PLAYERS)}
-                            />
-                        </div>
-                        <div className={'col-md-9'}>
-                            <Main
-                                history={this.state.history} stadium={this.state.stadium}
-                                rivals={this.state.rivals} fans={this.state.fans}
-                                players={this.state.players}
-                            />
-                        </div>
+            <div className={'text-center p-5'}>
+                <div className={'row'}>
+                    <div className={'col-md-3'}>
+                        <Menu
+                            history={() => this.handleChange(HISTORY)} stadium={() => this.handleChange(STADIUM)}
+                            rivals={() => this.handleChange(RIVALS)} fans={() => this.handleChange(FANS)}
+                            players={() => this.handleChange(PLAYERS)}
+                        />
+                    </div>
+                    <div className={'col-md-9'}>
+                        <Main
+                            history={this.state.history} stadium={this.state.stadium}
+                            rivals={this.state.rivals} fans={this.state.fans}
+                            players={this.state.players}
+                        />
                     </div>
                 </div>
-            </BrowserRouter>
+            </div>
         )
     }
 }
@@ -142,23 +140,24 @@ const Menu = () => {
 const Main = () => {
     return (
         <div>
-            {routes.map(({path, Component}) => (
-                <Route key={path} exact path={path}>
-                    {({match}) => (
-                        <CSSTransition
-                            in={match != null}
-                            timeout={1000}
-                            classNames={'app-transition'}
-                            unmountOnExit
-                        >
-                            <div className={'app-transition'}>
-                                <Component />
-                            </div>
-                        </CSSTransition>
-                    )}
-                </Route>
-            ))}
-            <Redirect to={'/barcelona/history'} />
+            <Switch>
+                {routes.map(({path, Component}) => (
+                    <Route key={path} exact path={path}>
+                        {({match}) => (
+                            <CSSTransition
+                                in={match != null}
+                                timeout={1000}
+                                classNames={'app-transition'}
+                                unmountOnExit
+                            >
+                                <div className={'app-transition'}>
+                                    <Component />
+                                </div>
+                            </CSSTransition>
+                        )}
+                    </Route>
+                ))}
+            </Switch>
         </div>
     )
 }
