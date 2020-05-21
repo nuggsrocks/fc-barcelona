@@ -9,7 +9,7 @@ if(typeof(module.hot) !== 'undefined') { // eslint-disable-line no-undef
 }
 
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter basename={'/barcelona'}>
         <App/>
         <Redirect to={'/history'}/>
     </BrowserRouter>, // eslint-disable-line no-undef
