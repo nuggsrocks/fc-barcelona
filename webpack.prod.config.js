@@ -13,6 +13,7 @@ module.exports = {
         filename: '[name].js'
     },
     target: 'web',
+    mode: 'production',
     optimization: {
         minimizer: [
             new UglifyJsPlugin({
@@ -54,7 +55,8 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/html/index.html',
-            filename: './index.html'
+            filename: './index.html',
+            favicon: './src/img/icon.png'
         })
     ]
 

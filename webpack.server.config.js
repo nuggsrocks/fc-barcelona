@@ -10,6 +10,7 @@ module.exports = {
         filename: '[name].js'
     },
     target: 'node',
+    mode: 'production',
     node: {
         __dirname: false,
         __filename: false
