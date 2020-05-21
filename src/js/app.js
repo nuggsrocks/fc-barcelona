@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link, Redirect, Route, Switch} from 'react-router-dom';
+import {Link, Route, Switch} from 'react-router-dom';
 import constants from './constants';
 import routes from './routes';
 import NotFound from './components/not-found';
@@ -101,7 +101,7 @@ const Menu = () => {
             <h1>Futbol Club Barcelona</h1>
             <nav>
                 {routes.map(({path, name}) =>
-                    <Link to={path} className={'btn btn-block barca-btn rounded-lg'}>
+                    <Link key={name} to={path} className={'btn btn-block barca-btn rounded-lg'}>
                         {name}
                     </Link>
                 )}

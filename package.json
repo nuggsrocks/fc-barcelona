@@ -5,8 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "pm2 start ecosystem.config.js",
-    "buildDev": "rm -rf dist && webpack --mode development --config webpack.dev.config.js && webpack --mode development --config webpack.server.config.js",
-    "buildProd": "rm -rf dist && webpack --mode production --config webpack.prod.config.js && webpack --mode production --config webpack.server.config.js",
+    "build": "rm -rf dist && webpack --mode production --config webpack.prod.config.js && webpack --mode production --config webpack.server.config.js",
     "stop": "pm2 delete fc-barcelona",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -48,6 +47,7 @@
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-middleware": "^3.7.2",
+    "webpack-dev-server": "^3.11.0",
     "webpack-hot-middleware": "^2.25.0",
     "webpack-node-externals": "^1.7.2"
   }
