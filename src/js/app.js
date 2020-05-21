@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link, Redirect, Route, Switch} from 'react-router-dom';
-import {CSSTransition} from 'react-transition-group';
 import constants from './constants';
 import routes from './routes';
 import NotFound from './components/not-found';
@@ -95,7 +94,7 @@ const Menu = () => {
         <div>
             <div>
                 <img id={'barca-logo'}
-                     src={'#'}
+                     src={'https://wallpapercave.com/wp/wp3179043.png'}
                      alt={'FC Barcelona Logo'}
                 />
             </div>
