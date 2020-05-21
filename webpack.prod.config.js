@@ -15,7 +15,7 @@ module.exports = {
         publicPath: '/',
         filename: '[name].js'
     },
-    target: 'node-webkit',
+    target: 'node',
     mode: 'production',
     node: {
         __dirname: false,
