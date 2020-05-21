@@ -7,7 +7,7 @@ import {BrowserRouter, Redirect} from 'react-router-dom'; // eslint-disable-line
 ReactDOM.render(
     <BrowserRouter>
         <App/>
-        <Redirect to={'/barcelona/history'}/>
+        <Redirect to={'/history'}/>
     </BrowserRouter>, // eslint-disable-line no-undef
     document.getElementById('root') // eslint-disable-line no-undef
 );
