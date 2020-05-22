@@ -9,7 +9,8 @@
   "scripts": {
     "start": "pm2 start ecosystem.config.js",
     "deploy": "pm2 start ecosystem.config.js --env=deploy",
-    "build": "rm -rf dist && webpack --mode production --config webpack.prod.config.js",
+    "build:dev": "rm -rf dist && webpack --mode development --config webpack.server.config.js && webpack --mode development --config webpack.dev.config.js",
+    "build:prod": "rm -rf dist && webpack --mode production --config webpack.server.config.js && webpack --mode production --config webpack.prod.config.js",
     "stop": "pm2 delete fc-barcelona",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

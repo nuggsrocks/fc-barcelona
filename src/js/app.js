@@ -1,8 +1,7 @@
 import React from 'react';
-import {Link, Route, Switch} from 'react-router-dom';
+import {Link, Route, Switch, BrowserRouter} from 'react-router-dom';
 import constants from './constants';
 import routes from './routes';
-import NotFound from './components/not-found';
 
 class App extends React.Component {
     constructor(props) {
@@ -67,24 +66,26 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className={'text-center p-5'}>
-                <div className={'row'}>
-                    <div className={'col-md-3'}>
-                        <Menu
-                            history={() => this.handleChange(constants.HISTORY)} stadium={() => this.handleChange(constants.STADIUM)}
-                            rivals={() => this.handleChange(constants.RIVALS)} fans={() => this.handleChange(constants.FANS)}
-                            players={() => this.handleChange(constants.PLAYERS)}
-                        />
-                    </div>
-                    <div className={'col-md-9'}>
-                        <Main
-                            history={this.state.history} stadium={this.state.stadium}
-                            rivals={this.state.rivals} fans={this.state.fans}
-                            players={this.state.players}
-                        />
+            <BrowserRouter>
+                <div className={'text-center p-5'}>
+                    <div className={'row'}>
+                        <div className={'col-md-3'}>
+                            <Menu
+                                history={() => this.handleChange(constants.HISTORY)} stadium={() => this.handleChange(constants.STADIUM)}
+                                rivals={() => this.handleChange(constants.RIVALS)} fans={() => this.handleChange(constants.FANS)}
+                                players={() => this.handleChange(constants.PLAYERS)}
+                            />
+                        </div>
+                        <div className={'col-md-9'}>
+                            <Main
+                                history={this.state.history} stadium={this.state.stadium}
+                                rivals={this.state.rivals} fans={this.state.fans}
+                                players={this.state.players}
+                            />
+                        </div>
                     </div>
                 </div>
-            </div>
+            </BrowserRouter>
         )
     }
 }
@@ -98,7 +99,7 @@ const Menu = () => {
                      alt={'FC Barcelona Logo'}
                 />
             </div>
-            <h1>Futbol Club Barcelona</h1>
+            <h1>Futballlll Club Barcelona</h1>
             <nav>
                 {routes.map(({path, name}) =>
                     <Link key={name} to={path} className={'btn btn-block barca-btn rounded-lg'}>
@@ -119,7 +120,6 @@ const Main = () => {
                         <Component />
                     </Route>
                 ))}
-                <Route component={NotFound}/>
             </Switch>
         </div>
     )

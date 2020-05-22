@@ -2,32 +2,24 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
     entry: {
-        main: './src/index.js',
-        style: './src/scss/index.scss',
-        server: './src/server/server.js'
+        main: './src/index.js'
     },
     output: {
         path: __dirname + '/dist',
         publicPath: '/',
         filename: '[name].js'
     },
-    target: 'node',
-    mode: 'production',
-    node: {
-        __dirname: false,
-        __filename: false
-    },
-    externals: [nodeExternals()],
+    target: 'web',
+    devtool: 'source-map',
     optimization: {
         minimizer: [
             new UglifyJsPlugin({
                 cache: true,
                 parallel: true,
-                sourceMap: false
+                sourceMap: true
             }),
             new OptimizeCSSAssetsPlugin({})
         ]
@@ -51,10 +43,6 @@ module.exports = {
                 loader: [MiniCSSExtractPlugin.loader, 'css-loader']
             },
             {
-                test: /\.scss$/,
-                loader: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
-            },
-            {
                 test: /\.(png|svg|jpg|gif)$/,
                 loader: 'url-loader'
             }
@@ -63,12 +51,11 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/html/index.html',
-            filename: './index.html',
-            favicon: './src/img/icon.png',
-            meta: {
-                'charset': 'UTF-8',
-                'viewport': 'width=device-width, initial-scale=1'
-            }
+            filename: './index.html'
+        }),
+        new MiniCSSExtractPlugin({
+            filename: '[name].css',
+            chunkFilename: '[id].css'
         })
     ]
 
