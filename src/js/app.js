@@ -94,12 +94,13 @@ const Menu = () => {
     return (
         <div>
             <div>
-                <img id={'barca-logo'}
-                     src={'icon.png'}
-                     alt={'FC Barcelona Logo'}
+                <img
+                    id={'barca-logo'}
+                    src={'icon.png'}
+                    alt={'FC Barcelona Logo'}
                 />
             </div>
-            <h1>Futballlll Club Barcelona</h1>
+            <h1>Futbol Club Barcelona</h1>
             <nav>
                 {routes.map(({path, name}) =>
                     <Link key={name} to={path} className={'btn btn-block barca-btn rounded-lg'}>
