@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link, Route, Switch, BrowserRouter} from 'react-router-dom';
+import {Link, Route, Switch, BrowserRouter, Redirect} from 'react-router-dom';
 import routes from './routes';
 
 const App = () => {
@@ -50,6 +50,7 @@ const Main = () => {
                         <Component />
                     </Route>
                 ))}
+	    	<Redirect to={'/history'}/>
             </Switch>
         </div>
     )
