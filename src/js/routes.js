@@ -3,14 +3,13 @@ import Stadium from './components/stadium';
 import Rivals from './components/rivals';
 import Fans from './components/fans';
 import Players from './components/players';
-import constants from './constants';
 
 const routes = [
-    {path: '/history', name: constants.HISTORY, Component: History},
-    {path: '/stadium', name: constants.STADIUM, Component: Stadium},
-    {path: '/rivals', name: constants.RIVALS, Component: Rivals},
-    {path: '/fans', name: constants.FANS, Component: Fans},
-    {path: '/players', name: constants.PLAYERS, Component: Players}
+    {path: '/history', name: 'History', Component: History},
+    {path: '/stadium', name: 'Stadium', Component: Stadium},
+    {path: '/rivals', name: 'Rivals', Component: Rivals},
+    {path: '/fans', name: 'Fans', Component: Fans},
+    {path: '/players', name: 'Players', Component: Players}
 ];
 
 export default routes;
