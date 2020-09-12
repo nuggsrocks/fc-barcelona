@@ -1,27 +1,21 @@
 import React from 'react';
 import {Link, Route, Switch, BrowserRouter, Redirect} from 'react-router-dom';
 import routes from './routes';
+import ReactDOM from 'react-dom';
+import '../scss/index.scss';
 
 const App = () => {
 	return (
 		<BrowserRouter>
-			<div className={'text-center p-5'}>
-				<div className={'row'}>
-					<div className={'col-md-3'}>
-						<Menu />
-					</div>
-					<div className={'col-md-9'}>
-						<Main />
-					</div>
-				</div>
-			</div>
+            <Menu />
+            <Main />
 		</BrowserRouter>
 	)
 }
 
 const Menu = () => {
     return (
-        <div>
+        <header>
             <div>
                 <img
                     id={'barca-logo'}
@@ -32,28 +26,28 @@ const Menu = () => {
             <h1>Futbol Club Barcelona</h1>
             <nav>
                 {routes.map(({path, name}) =>
-                    <Link key={name} to={path} className={'btn btn-block barca-btn rounded-lg'}>
+                    <Link key={name} to={path}>
                         {name}
                     </Link>
                 )}
             </nav>
-        </div>
+        </header>
     )
 }
 
 const Main = () => {
     return (
-        <div>
+        <main>
             <Switch>
                 {routes.map(({path, Component}) => (
                     <Route key={path} exact path={path}>
                         <Component />
                     </Route>
                 ))}
-	    	<Redirect to={'/history'}/>
+                <Redirect to={'/history'}/>
             </Switch>
-        </div>
+        </main>
     )
 }
 
-export default App;
+ReactDOM.render(<App/>, document.querySelector('#root'));

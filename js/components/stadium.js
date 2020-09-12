@@ -2,7 +2,7 @@ import React from "react";
 
 const Stadium = () => {
     return (
-        <div>
+        <section>
             <h2>
                 Stadium
             </h2>
@@ -80,7 +80,7 @@ const Stadium = () => {
                 to its present day figure of 99,000.
             </p>
             <code>The <em>Camp Nou</em> is currently the largest stadium in Europe, and the 11th largest in the world.</code>
-        </div>
+        </section>
     )
 };
 

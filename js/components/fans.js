@@ -2,7 +2,7 @@ import React from "react";
 
 const Fans = () => {
     return (
-        <div>
+        <section>
             <h2>
                 Fans
             </h2>
@@ -24,7 +24,7 @@ const Fans = () => {
                 sports teams, with over 103 million Facebook fans as of December 2017, just behind Real Madrid.
             </p>
             <code>Fan Nicknames: Cul&eacute;s, Barcelonistas, Blaugranes, Azulgranas</code>
-        </div>
+        </section>
     )
 };
 

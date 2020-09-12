@@ -67,7 +67,7 @@ class Players extends React.Component {
 
     render() {
         return (
-            <div>
+            <section>
                 <h2>
                     Players
                 </h2>
@@ -113,7 +113,7 @@ class Players extends React.Component {
                     </div>
                     <h4 className={'pt-3'} id={'barca-player-function-result'}>{this.state.output}</h4>
                 </div>
-            </div>
+            </section>
         )
     }
 }

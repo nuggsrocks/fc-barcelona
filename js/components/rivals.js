@@ -2,7 +2,7 @@ import React from "react";
 
 const Rivals = () => {
     return (
-        <div>
+        <section>
             <h2>
                 Rivalries
             </h2>
@@ -23,7 +23,7 @@ const Rivals = () => {
                 The rivalry is known as <em className={'names'}>El Derbi Barcelon&iacute;</em>.
             </p>
             <code>Barcelona has 96 wins all-time in competitive <em>El Cl&aacute;sico</em> matches. Real Madrid has 146.</code>
-        </div>
+        </section>
     )
 };
 

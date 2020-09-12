@@ -2,7 +2,7 @@ import React from "react";
 
 const History = () => {
     return (
-        <div>
+        <section>
             <h2>
                 History
             </h2>
@@ -110,7 +110,7 @@ const History = () => {
                 the 2015 <em className={'competitions'}>Champions League</em>.
             </p>
             <code>Founded 29 November, 1899</code>
-        </div>
+        </section>
     )
 };
 
