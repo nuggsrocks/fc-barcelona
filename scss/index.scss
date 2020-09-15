@@ -3,9 +3,99 @@ $barca-blue: #004C99;
 $barca-yellow: #EEBC00;
 
 body {
-  background-color: lightgray;
+	background-color: lightgray;
+	margin: 20px;
+	font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
-  color: $barca-blue;
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Playfair Display', serif;
+	margin: 0;
+}
+
+div#root {
+	display: flex;
+
+	flex-flow: row nowrap;
+	
+	
+
+	header {
+		flex: 1 0 20vw;
+
+		text-align: center;
+
+		img {
+			max-width: 80%;
+		}
+
+		h1 {
+			font-size: 3rem;
+		
+			color: $barca-blue;
+		}
+
+		nav {
+			a {
+				font-family: 'Playfair Display', serif;
+				display: block;
+				padding: 10px 0;
+				margin: 5px 0;
+				text-decoration: none;
+				font-size: 2rem;
+				color: $barca-red;
+
+				border-radius: 5px;
+
+				&:hover {
+					color: white;
+					background-color: $barca-blue;
+				}
+
+				&:active {
+					color: white;
+					background-color: $barca-red;
+				}
+			}
+		}
+	}
+
+	main {
+		section {
+			padding: 0 20px;
+
+			h2 {
+				font-size: 2.5rem;
+				color: $barca-red;
+			}
+
+			h3 {
+				font-size: 2rem;
+			}
+
+			p {
+				font-size: 1.25rem;
+				line-height: 2.5rem;
+
+				em {
+					font-style: normal;
+					font-weight: bold;
+					&.competitions {
+						color: $barca-red;
+					}
+					&.names {
+						color: $barca-blue;
+					}
+				}
+			}
+
+			footer {
+				display: inline-block;
+				font-family: monospace;
+				font-size: 1.25rem;
+				background-color: $barca-yellow;
+			}
+		}
+	}
+
 }

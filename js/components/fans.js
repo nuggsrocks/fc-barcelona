@@ -23,7 +23,7 @@ const Fans = () => {
                 supported teams globally, Barcelona has the second highest social media following in the world among
                 sports teams, with over 103 million Facebook fans as of December 2017, just behind Real Madrid.
             </p>
-            <code>Fan Nicknames: Cul&eacute;s, Barcelonistas, Blaugranes, Azulgranas</code>
+            <footer>Fan Nicknames: Cul&eacute;s, Barcelonistas, Blaugranes, Azulgranas</footer>
         </section>
     )
 };

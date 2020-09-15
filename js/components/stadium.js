@@ -79,7 +79,7 @@ const Stadium = () => {
                 the century was out the standing areas were turned into seating thus reducing the stadium’s capacity
                 to its present day figure of 99,000.
             </p>
-            <code>The <em>Camp Nou</em> is currently the largest stadium in Europe, and the 11th largest in the world.</code>
+            <footer>The <em>Camp Nou</em> is currently the largest stadium in Europe, and the 11th largest in the world.</footer>
         </section>
     )
 };

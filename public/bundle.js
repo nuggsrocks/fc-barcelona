@@ -108,7 +108,7 @@ var Fans = function Fans() {
     className: 'barca-text'
   }, "In addition to membership, as of 2015 there are 1,267 officially registered fan clubs, called ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", {
     className: 'names'
-  }, "penyes"), ", around the world. The fan clubs promote Barcelona in their locality and receive beneficial offers when visiting Barcelona. Among the best supported teams globally, Barcelona has the second highest social media following in the world among sports teams, with over 103 million Facebook fans as of December 2017, just behind Real Madrid."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "Fan Nicknames: Cul\xE9s, Barcelonistas, Blaugranes, Azulgranas"));
+  }, "penyes"), ", around the world. The fan clubs promote Barcelona in their locality and receive beneficial offers when visiting Barcelona. Among the best supported teams globally, Barcelona has the second highest social media following in the world among sports teams, with over 103 million Facebook fans as of December 2017, just behind Real Madrid."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, "Fan Nicknames: Cul\xE9s, Barcelonistas, Blaugranes, Azulgranas"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Fans);
@@ -279,7 +279,7 @@ var History = function History() {
     className: 'competitions'
   }, "Copa del Rey"), " and the 2015 ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", {
     className: 'competitions'
-  }, "Champions League"), "."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "Founded 29 November, 1899"));
+  }, "Champions League"), "."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, "Founded 29 November, 1899"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (History);
@@ -407,7 +407,7 @@ var Players = /*#__PURE__*/function (_React$Component) {
         className: 'barca-text'
       }, "Marc-Andr\xE9 ter Stegen (", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", null, "Germany"), ")"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: 'barca-text'
-      }, "Gerard Piqu\xE9 (", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", null, "Spain"), ")"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "Current Manager: Ernesto Valverde"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Gerard Piqu\xE9 (", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", null, "Spain"), ")"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, "Current Manager: Ernesto Valverde"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: 'player-number-function',
         className: 'pt-4'
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -461,7 +461,7 @@ var Rivals = function Rivals() {
     className: 'barca-text'
   }, "Bar\xE7a's local rival has always been Espanyol. Being one of the clubs granted royal patronage, Espanyol was founded exclusively by Spanish football fans, unlike the multinational nature of Bar\xE7a's formation. This led to a strengthened rivalry due to the ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", null, "Barcelonistas"), "' hatred and distrust of the Spanish crown. Meanwhile, the founding message of Espanyol was clearly anti-Barcelona, and they have disapprovingly viewed FC Barcelona as a team of foreigners. The rivalry is known as ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", {
     className: 'names'
-  }, "El Derbi Barcelon\xED"), "."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "Barcelona has 96 wins all-time in competitive ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", null, "El Cl\xE1sico"), " matches. Real Madrid has 146."));
+  }, "El Derbi Barcelon\xED"), "."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, "Barcelona has 96 wins all-time in competitive ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", null, "El Cl\xE1sico"), " matches. Real Madrid has 146."));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Rivals);
@@ -516,7 +516,7 @@ var Stadium = function Stadium() {
     className: 'grounds'
   }, "Camp Nou"), " had a capacity of 93,053 (the old project for a capacity of 150,000 had been abandoned) and the pitch measured 107x72 metres (it currently measures 105x68 to fulfill UEFA requirements). The principal materials used in its construction were iron and concrete and since 1957 the stadium has undergone several refurbishments. Amongst the most notable were the installation of floodlighting in 1959, the arrival of the electronic scoreboard in 1976 and the construction of the VIP area and press box which came during the 1981/82 season. In 1982 the stadium\u2019s capacity was increased by 22,150 with the addition of the third tier of seating, giving ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", {
     className: 'grounds'
-  }, "Camp Nou"), " room for some 115,000 fans. The stadium played host that year to the opening ceremony and first game of the World Cup. Two years later in 1984 the Club Museum was added to the stadium. In 1994, more work was carried out as the pitch was lowered by 2.5 metres to allow the lower seating area to be expanded, the conversion of standing areas behind the goals into seated areas and the removal of the moat from around the pitch. Before the century was out the standing areas were turned into seating thus reducing the stadium\u2019s capacity to its present day figure of 99,000."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "The ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", null, "Camp Nou"), " is currently the largest stadium in Europe, and the 11th largest in the world."));
+  }, "Camp Nou"), " room for some 115,000 fans. The stadium played host that year to the opening ceremony and first game of the World Cup. Two years later in 1984 the Club Museum was added to the stadium. In 1994, more work was carried out as the pitch was lowered by 2.5 metres to allow the lower seating area to be expanded, the conversion of standing areas behind the goals into seated areas and the removal of the moat from around the pitch. Before the century was out the standing areas were turned into seating thus reducing the stadium\u2019s capacity to its present day figure of 99,000."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, "The ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", null, "Camp Nou"), " is currently the largest stadium in Europe, and the 11th largest in the world."));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Stadium);
@@ -551,11 +551,11 @@ var App = function App() {
 };
 
 var Menu = function Menu() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     id: 'barca-logo',
     src: 'icon.png',
     alt: 'FC Barcelona Logo'
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Futbol Club Barcelona"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", null, _routes__WEBPACK_IMPORTED_MODULE_2__["default"].map(function (_ref) {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Futbol Club Barcelona"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", null, _routes__WEBPACK_IMPORTED_MODULE_2__["default"].map(function (_ref) {
     var path = _ref.path,
         name = _ref.name;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
@@ -717,7 +717,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "body {\n  background-color: lightgray; }\n\nh1 {\n  color: #004C99; }\n", "",{"version":3,"sources":["webpack://scss/index.scss"],"names":[],"mappings":"AAIA;EACE,2BAA2B,EAAA;;AAG7B;EACE,cARkB,EAAA","sourcesContent":["$barca-red: #A60042;\n$barca-blue: #004C99;\n$barca-yellow: #EEBC00;\n\nbody {\n  background-color: lightgray;\n}\n\nh1 {\n  color: $barca-blue;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "body {\n  background-color: lightgray;\n  margin: 20px;\n  font-family: 'Open Sans', sans-serif; }\n\nh1, h2, h3, h4, h5, h6 {\n  font-family: 'Playfair Display', serif;\n  margin: 0; }\n\ndiv#root {\n  display: flex;\n  flex-flow: row nowrap; }\n  div#root header {\n    flex: 1 0 20vw;\n    text-align: center; }\n    div#root header img {\n      max-width: 80%; }\n    div#root header h1 {\n      font-size: 3rem;\n      color: #004C99; }\n    div#root header nav a {\n      font-family: 'Playfair Display', serif;\n      display: block;\n      padding: 10px 0;\n      margin: 5px 0;\n      text-decoration: none;\n      font-size: 2rem;\n      color: #A60042;\n      border-radius: 5px; }\n      div#root header nav a:hover {\n        color: white;\n        background-color: #004C99; }\n      div#root header nav a:active {\n        color: white;\n        background-color: #A60042; }\n  div#root main section {\n    padding: 0 20px; }\n    div#root main section h2 {\n      font-size: 2.5rem;\n      color: #A60042; }\n    div#root main section h3 {\n      font-size: 2rem; }\n    div#root main section p {\n      font-size: 1.25rem;\n      line-height: 2.5rem; }\n      div#root main section p em {\n        font-style: normal;\n        font-weight: bold; }\n        div#root main section p em.competitions {\n          color: #A60042; }\n        div#root main section p em.names {\n          color: #004C99; }\n    div#root main section footer {\n      display: inline-block;\n      font-family: monospace;\n      font-size: 1.25rem;\n      background-color: #EEBC00; }\n", "",{"version":3,"sources":["webpack://scss/index.scss"],"names":[],"mappings":"AAIA;EACC,2BAA2B;EAC3B,YAAY;EACZ,oCAAoC,EAAA;;AAGrC;EACC,sCAAsC;EACtC,SAAS,EAAA;;AAGV;EACC,aAAa;EAEb,qBAAqB,EAAA;EAHtB;IAQE,cAAc;IAEd,kBAAkB,EAAA;IAVpB;MAaG,cAAc,EAAA;IAbjB;MAiBG,eAAe;MAEf,cAjCiB,EAAA;IAcpB;MAwBI,sCAAsC;MACtC,cAAc;MACd,eAAe;MACf,aAAa;MACb,qBAAqB;MACrB,eAAe;MACf,cA7Ce;MA+Cf,kBAAkB,EAAA;MAhCtB;QAmCK,YAAY;QACZ,yBAlDe,EAAA;MAcpB;QAwCK,YAAY;QACZ,yBAxDc,EAAA;EAenB;IAiDG,eAAe,EAAA;IAjDlB;MAoDI,iBAAiB;MACjB,cApEe,EAAA;IAenB;MAyDI,eAAe,EAAA;IAzDnB;MA6DI,kBAAkB;MAClB,mBAAmB,EAAA;MA9DvB;QAiEK,kBAAkB;QAClB,iBAAiB,EAAA;QAlEtB;UAoEM,cAnFa,EAAA;QAenB;UAuEM,cArFc,EAAA;IAcpB;MA6EI,qBAAqB;MACrB,sBAAsB;MACtB,kBAAkB;MAClB,yBA7FkB,EAAA","sourcesContent":["$barca-red: #A60042;\n$barca-blue: #004C99;\n$barca-yellow: #EEBC00;\n\nbody {\n\tbackground-color: lightgray;\n\tmargin: 20px;\n\tfont-family: 'Open Sans', sans-serif;\n}\n\nh1, h2, h3, h4, h5, h6 {\n\tfont-family: 'Playfair Display', serif;\n\tmargin: 0;\n}\n\ndiv#root {\n\tdisplay: flex;\n\n\tflex-flow: row nowrap;\n\t\n\t\n\n\theader {\n\t\tflex: 1 0 20vw;\n\n\t\ttext-align: center;\n\n\t\timg {\n\t\t\tmax-width: 80%;\n\t\t}\n\n\t\th1 {\n\t\t\tfont-size: 3rem;\n\t\t\n\t\t\tcolor: $barca-blue;\n\t\t}\n\n\t\tnav {\n\t\t\ta {\n\t\t\t\tfont-family: 'Playfair Display', serif;\n\t\t\t\tdisplay: block;\n\t\t\t\tpadding: 10px 0;\n\t\t\t\tmargin: 5px 0;\n\t\t\t\ttext-decoration: none;\n\t\t\t\tfont-size: 2rem;\n\t\t\t\tcolor: $barca-red;\n\n\t\t\t\tborder-radius: 5px;\n\n\t\t\t\t&:hover {\n\t\t\t\t\tcolor: white;\n\t\t\t\t\tbackground-color: $barca-blue;\n\t\t\t\t}\n\n\t\t\t\t&:active {\n\t\t\t\t\tcolor: white;\n\t\t\t\t\tbackground-color: $barca-red;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\n\tmain {\n\t\tsection {\n\t\t\tpadding: 0 20px;\n\n\t\t\th2 {\n\t\t\t\tfont-size: 2.5rem;\n\t\t\t\tcolor: $barca-red;\n\t\t\t}\n\n\t\t\th3 {\n\t\t\t\tfont-size: 2rem;\n\t\t\t}\n\n\t\t\tp {\n\t\t\t\tfont-size: 1.25rem;\n\t\t\t\tline-height: 2.5rem;\n\n\t\t\t\tem {\n\t\t\t\t\tfont-style: normal;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\t&.competitions {\n\t\t\t\t\t\tcolor: $barca-red;\n\t\t\t\t\t}\n\t\t\t\t\t&.names {\n\t\t\t\t\t\tcolor: $barca-blue;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\tfooter {\n\t\t\t\tdisplay: inline-block;\n\t\t\t\tfont-family: monospace;\n\t\t\t\tfont-size: 1.25rem;\n\t\t\t\tbackground-color: $barca-yellow;\n\t\t\t}\n\t\t}\n\t}\n\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 

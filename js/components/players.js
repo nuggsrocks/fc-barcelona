@@ -89,6 +89,7 @@ class Players extends React.Component {
                     the <em className={'competitions'}>FIFA Club World Cup</em> in one calendar year. The same year, five
                     of their players and their coach were voted onto the <em className={'competitions'}>UEFA Team of the Year</em> 2009.
                 </p>
+                
                 <h3>Notable Current Players</h3>
 
                 <p className={'barca-text'}>Lionel Messi (<em>Argentina</em>)</p>
@@ -100,7 +101,7 @@ class Players extends React.Component {
                 <p className={'barca-text'}>Marc-Andr&eacute; ter Stegen (<em>Germany</em>)</p>
                 <p className={'barca-text'}>Gerard Piqu&eacute; (<em>Spain</em>)</p>
 
-                <code>Current Manager: Ernesto Valverde</code>
+                <footer>Current Manager: Ernesto Valverde</footer>
 
 
                 <div id={'player-number-function'} className={'pt-4'}>

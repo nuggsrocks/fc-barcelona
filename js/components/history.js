@@ -109,7 +109,7 @@ const History = () => {
                 two <em className={'competitions'}>La Ligas</em>, one <em className={'competitions'}>Copa del Rey</em> and
                 the 2015 <em className={'competitions'}>Champions League</em>.
             </p>
-            <code>Founded 29 November, 1899</code>
+            <footer>Founded 29 November, 1899</footer>
         </section>
     )
 };

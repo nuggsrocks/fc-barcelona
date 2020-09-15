@@ -22,7 +22,7 @@ const Rivals = () => {
                 anti-Barcelona, and they have disapprovingly viewed FC Barcelona as a team of foreigners.
                 The rivalry is known as <em className={'names'}>El Derbi Barcelon&iacute;</em>.
             </p>
-            <code>Barcelona has 96 wins all-time in competitive <em>El Cl&aacute;sico</em> matches. Real Madrid has 146.</code>
+            <footer>Barcelona has 96 wins all-time in competitive <em>El Cl&aacute;sico</em> matches. Real Madrid has 146.</footer>
         </section>
     )
 };
