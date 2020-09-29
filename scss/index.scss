@@ -1,9 +1,10 @@
-$barca-red: #A60042;
-$barca-blue: #004C99;
-$barca-yellow: #EEBC00;
+$red: #A60042;
+$blue: #004C99;
+$yellow: #EEBC00;
+$gray: lightgray;
 
 body {
-	background-color: lightgray;
+	background-color: $gray;
 	margin: 50px;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -32,10 +33,10 @@ div#root {
 		h1 {
 			font-size: 3rem;
 		
-			color: $barca-blue;
+			color: $blue;
 		}
 
-		button#menu {
+		button {
 			display: none;
 		}
 
@@ -47,7 +48,7 @@ div#root {
 				margin: 5px 0;
 				text-decoration: none;
 				font-size: 2rem;
-				color: $barca-red;
+				color: $red;
 
 				border-radius: 5px;
 
@@ -55,19 +56,19 @@ div#root {
 
 				&:hover {
 					color: white;
-					background-color: $barca-blue;
+					background-color: $blue;
 				}
 
 				&:active {
 					color: white;
-					background-color: $barca-red;
+					background-color: $red;
 				}
 			}
 		}
 	}
 
-	div#divider {
-		background-color: $barca-red;
+	div.divider {
+		background-color: $red;
 		margin: 10px;
 		flex: 1 0 1px;
 	}
@@ -78,7 +79,7 @@ div#root {
 
 			h2 {
 				font-size: 2.5rem;
-				color: $barca-red;
+				color: $red;
 			}
 
 			h3 {
@@ -93,10 +94,10 @@ div#root {
 					font-style: normal;
 					font-weight: bold;
 					&.competitions {
-						color: $barca-red;
+						color: $red;
 					}
 					&.names {
-						color: $barca-blue;
+						color: $blue;
 					}
 				}
 			}
@@ -106,7 +107,7 @@ div#root {
 				font-family: monospace;
 				font-size: 1.25rem;
 				line-height: 2rem;
-				background-color: $barca-yellow;
+				background-color: $yellow;
 				padding: 0 20px;
 			}
 		}
@@ -126,25 +127,52 @@ div#root {
 		header {
 			flex: 1 0 100%;
 
+			button {
+					display: inline-block;
+					width: 100%;
+					color: $red;
+					background-color: transparent;
+					border: none;
 
-			button#menu {
-				display: block;
-			}
+					margin-top: 20px;
 
-			nav {
-				a {
+					font-size: 2rem;
+
+				}
+
 				
 
-					&:active {
-						color: initial;
-						background-color: initial;
+
+			div.dropdown {
+				width: 100%;
+				position: relative;
+				display: inline-block;
+
+
+
+				nav {
+					border-radius: 10px;
+					display: none;
+					background-color: $red;
+
+					a {
+						color: $gray;
+						font-size: 3rem;
+					}
+
+
+					&.active {
+						display: block;
 					}
 				}
+				
+
 			}
 		}
 
 
-		div#divider {
+		div.divider {
+			display: block;
 			flex: 1;
 			height: 1px;
 		}
@@ -156,6 +184,8 @@ div#root {
 
 				padding: 0;
 
+				margin: 0;
+
 				h2 {
 					font-size: 3.5rem;
 				}
@@ -164,25 +194,6 @@ div#root {
 			}
 		}
 
-		div.dropdown {
-				position: relative;
-				display: inline-block;
-				nav {
-					
-					display: none;
-					
-
-					a {
-
-						font-size: 3rem;
-					}
-
-					&.active {
-						display: block;
-					}
-				}
-
-			}
 	}
 }
 

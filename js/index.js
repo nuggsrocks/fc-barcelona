@@ -9,7 +9,7 @@ const App = () => {
 	return (
 		<BrowserRouter>
 			<Menu />
-			<div id='divider'/>
+			<div className='divider'/>
 			<Main />
 		</BrowserRouter>
 	)
@@ -37,13 +37,15 @@ const Menu = () => {
 			
 			<h1>Futbol Club Barcelona</h1>
 
+			<button onClick={handleClick}>
+				<i className="fas fa-bars"/>
+			</button>
+
 			<div className='dropdown'>
-				<button id='menu' onClick={handleClick}>
-					<i className='fas fa-bars'/>
-				</button>
+			
 				<nav>
 					{
-						routes.map(({path, name}) =>
+						routes.map(({path, name}) => 
 							<Link key={name} to={path}>
 								{name}
 							</Link>
