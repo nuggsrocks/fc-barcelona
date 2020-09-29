@@ -35,6 +35,10 @@ div#root {
 			color: $barca-blue;
 		}
 
+		button#menu {
+			display: none;
+		}
+
 		nav {
 			a {
 				font-family: 'Playfair Display', serif;
@@ -60,6 +64,12 @@ div#root {
 				}
 			}
 		}
+	}
+
+	div#divider {
+		background-color: $barca-red;
+		margin: 10px;
+		flex: 1 0 1px;
 	}
 
 	main {
@@ -104,8 +114,7 @@ div#root {
 
 }
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 50rem) {
 	body {
 		margin: 20px;
 	}
@@ -117,17 +126,14 @@ div#root {
 		header {
 			flex: 1 0 100%;
 
-			img {
-				
-			}
 
-			h1 {
-				font-size: 4rem;
+			button#menu {
+				display: block;
 			}
 
 			nav {
 				a {
-					font-size: 3rem;
+				
 
 					&:active {
 						color: initial;
@@ -136,6 +142,13 @@ div#root {
 				}
 			}
 		}
+
+
+		div#divider {
+			flex: 1;
+			height: 1px;
+		}
+
 
 		main {
 			section {
@@ -150,7 +163,49 @@ div#root {
 
 			}
 		}
+
+		div.dropdown {
+				position: relative;
+				display: inline-block;
+				nav {
+					
+					display: none;
+					
+
+					a {
+
+						font-size: 3rem;
+					}
+
+					&.active {
+						display: block;
+					}
+				}
+
+			}
 	}
+}
+
+
+@media screen and (max-width: 50rem) and (min-width: 30rem) {
+	div#root {
+
+		header {
+			img {
+				max-width: 60%;
+
+			}
+
+			h1 {
+				font-size: 6rem;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 30rem) {
+	
 }
 
 

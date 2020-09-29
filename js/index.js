@@ -2,18 +2,28 @@ import React from 'react';
 import {Link, Route, Switch, BrowserRouter, Redirect} from 'react-router-dom';
 import routes from './routes';
 import ReactDOM from 'react-dom';
+import '@fortawesome/fontawesome-free/js/all.js';
 import '../scss/index.scss';
 
 const App = () => {
 	return (
 		<BrowserRouter>
 			<Menu />
+			<div id='divider'/>
 			<Main />
 		</BrowserRouter>
 	)
 }
 
 const Menu = () => {
+	const handleClick = () => {
+		let nav = document.querySelector('nav');
+		if (nav.className === 'active') {
+			nav.className = '';
+		} else {
+			nav.className = 'active';
+		}
+	};
 	return (
 		<header>
 			
@@ -26,15 +36,21 @@ const Menu = () => {
 			
 			
 			<h1>Futbol Club Barcelona</h1>
-			<nav>
-				{
-					routes.map(({path, name}) =>
-						<Link key={name} to={path}>
-							{name}
-						</Link>
-					)
-				}
-			</nav>
+
+			<div className='dropdown'>
+				<button id='menu' onClick={handleClick}>
+					<i className='fas fa-bars'/>
+				</button>
+				<nav>
+					{
+						routes.map(({path, name}) =>
+							<Link key={name} to={path}>
+								{name}
+							</Link>
+						)
+					}
+				</nav>
+			</div>
 		</header>
 	)
 }
