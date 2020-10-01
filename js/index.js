@@ -41,18 +41,18 @@ const Menu = () => {
 				<i className="fas fa-bars"/>
 			</button>
 
-			<div className='dropdown'>
 			
-				<nav>
-					{
-						routes.map(({path, name}) => 
-							<Link key={name} to={path}>
-								{name}
-							</Link>
-						)
-					}
-				</nav>
-			</div>
+			
+			<nav>
+				{
+					routes.map(({path, name}) => 
+						<Link key={name} to={path}>
+							{name}
+						</Link>
+					)
+				}
+			</nav>
+			
 		</header>
 	)
 }

@@ -3,6 +3,7 @@ $blue: #004C99;
 $yellow: #EEBC00;
 $gray: lightgray;
 
+
 body {
 	background-color: $gray;
 	margin: 50px;
@@ -19,6 +20,9 @@ div#root {
 
 	flex-flow: row nowrap;
 	
+	* {
+		border-radius: 10px;
+	}
 	
 
 	header {
@@ -50,7 +54,6 @@ div#root {
 				font-size: 2rem;
 				color: $red;
 
-				border-radius: 5px;
 
 
 
@@ -128,46 +131,63 @@ div#root {
 			flex: 1 0 100%;
 
 			button {
-					display: inline-block;
-					width: 100%;
-					color: $red;
-					background-color: transparent;
-					border: none;
-
-					margin-top: 20px;
-
-					font-size: 2rem;
-
-				}
-
-				
-
-
-			div.dropdown {
-				width: 100%;
-				position: relative;
 				display: inline-block;
+				width: 100%;
+				color: $red;
+				background-color: transparent;
+				border: none;
+
+				font-size: 2rem;
+			}
 
 
 
-				nav {
-					border-radius: 10px;
-					display: none;
-					background-color: $red;
 
-					a {
-						color: $gray;
-						font-size: 3rem;
+			
+
+			nav {
+				height: 0;
+				background-color: $red;
+
+				display: flex;
+				flex-flow: row wrap;
+
+				overflow: hidden;
+
+
+				transition: height 300ms;
+
+				a {
+					color: $gray;
+					border-radius: 0;
+					font-size: 3rem;
+					line-height: 3rem;
+					margin: 0;
+
+
+
+					flex: 0 1 100%;
+
+
+					&:nth-child(1) {
+						border-radius: 10px 10px 0 0;
 					}
 
-
-					&.active {
-						display: block;
+					&:nth-last-child(1) {
+						border-radius: 0 0 10px 10px;
 					}
 				}
-				
 
+
+
+
+				&.active {
+					height: calc(15rem + 100px);
+				}
 			}
+
+
+			
 		}
 
 
