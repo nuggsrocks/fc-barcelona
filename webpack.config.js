@@ -52,7 +52,7 @@ module.exports = env => {
         },
         devtool: 'source-map',
         target: 'web',
-        watch: true,
+        watch: false,
         plugins: [
             new HtmlWebpackPlugin({
                 template: 'index.html',
