@@ -11,7 +11,6 @@
     "build:test": "webpack --env.ENVIRONMENT=test --config webpack.config.js",
     "start:dev": "pm2 start ecosystem.config.js",
     "start:test": "pm2 start ecosystem.config.js --env=test",
-    "start": "pm2 start ecosystem.config.js --env=glitch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Matthew Fisher <nuggsrocks@yahoo.com>",
