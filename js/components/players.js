@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Players = () => {
 	
 	return (
@@ -31,7 +33,7 @@ const Players = () => {
 			<p className={'barca-text'}>Frenkie de Jong (<em>Netherlands</em>)</p>
 			<p className={'barca-text'}>Gerard Piqu&eacute; (<em>Spain</em>)</p>
 
-			<footer>Current Manager: N/A</footer>
+			<footer>Current Manager: Ronald Koeman</footer>
 		</section>
 	)
 }
