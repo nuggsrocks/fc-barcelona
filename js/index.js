@@ -2,8 +2,10 @@ import React from 'react';
 import {Link, Route, Switch, BrowserRouter, Redirect} from 'react-router-dom';
 import routes from './routes';
 import ReactDOM from 'react-dom';
-import '@fortawesome/fontawesome-free/js/all.js';
+import menuLogo from '@fortawesome/fontawesome-free/svgs/solid/bars.svg';
 import '../scss/index.scss';
+
+import barcaLogo from '../img/icon.png';
 
 const App = () => {
 	return (
@@ -30,7 +32,7 @@ const Menu = () => {
 			
 			<img
 				id={'barca-logo'}
-				src={'icon.png'}
+				src={barcaLogo}
 				alt={'FC Barcelona Logo'}
 			/>
 			
@@ -38,7 +40,7 @@ const Menu = () => {
 			<h1>Futbol Club Barcelona</h1>
 
 			<button onClick={handleClick}>
-				<i className="fas fa-bars"/>
+				<img src={menuLogo} alt='menu-logo'/>
 			</button>
 
 			

@@ -7,7 +7,7 @@ module.exports = {
 		filename: 'bundle.js'
 	},
 	module: {
-			rules: [
+		rules: [
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
@@ -19,15 +19,16 @@ module.exports = {
 			},
 			
 			{
-				test: /\.(jpe?g|png|gif|wav|mp3)/,
+				test: /\.(jpe?g|png|svg|gif|wav|mp3)/,
 				loader: 'file-loader'
 			}
-			]
-		},
+		]
+	},
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: 'index.html',
 			filename: 'index.html',
+			favicon: 'img/icon.png',
 			meta: {
 				charset: 'utf-8',
 				viewport: 'width=device-width,initial-scale=1.0'
