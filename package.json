@@ -12,6 +12,7 @@
     "build:prod": "rm -rf public;webpack --config webpack.prod.js",
     "start:dev": "pm2 start ecosystem.config.js",
     "start:test": "pm2 start ecosystem.config.js --env=test",
+    "deploy": "gh-pages -d public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Matthew Fisher <nuggsrocks@yahoo.com>",
