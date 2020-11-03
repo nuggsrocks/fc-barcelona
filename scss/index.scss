@@ -96,12 +96,7 @@ div#root {
 				em {
 					font-style: normal;
 					font-weight: bold;
-					&.competitions {
-						color: $red;
-					}
-					&.names {
-						color: $blue;
-					}
+					color: $blue;
 				}
 			}
 
