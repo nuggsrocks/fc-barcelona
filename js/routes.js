@@ -1,15 +1,11 @@
-import History from './components/history';
-import Stadium from './components/stadium';
-import Rivals from './components/rivals';
-import Fans from './components/fans';
-import Players from './components/players';
+import React from 'react';
 
 const routes = [
-    {path: '/history', name: 'History', Component: History},
-    {path: '/stadium', name: 'Stadium', Component: Stadium},
-    {path: '/rivals', name: 'Rivals', Component: Rivals},
-    {path: '/fans', name: 'Fans', Component: Fans},
-    {path: '/players', name: 'Players', Component: Players}
+    {path: '/history', name: 'History', Component: React.lazy(() => import('./components/history'))},
+    {path: '/stadium', name: 'Stadium', Component: React.lazy(() => import('./components/stadium'))},
+    {path: '/rivals', name: 'Rivals', Component: React.lazy(() => import('./components/rivals'))},
+    {path: '/fans', name: 'Fans', Component: React.lazy(() => import('./components/fans'))},
+    {path: '/players', name: 'Players', Component: React.lazy(() => import('./components/players'))}
 ];
 
 export default routes;

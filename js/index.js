@@ -1,7 +1,6 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import {Link, Route, Switch, BrowserRouter, Redirect} from 'react-router-dom';
 import routes from './routes';
-import ReactDOM from 'react-dom';
 import menuLogo from '@fortawesome/fontawesome-free/svgs/solid/bars.svg';
 import '../scss/index.scss';
 
@@ -63,15 +62,19 @@ const Main = () => {
 	return (
 		<main>
 			<Switch>
+				<Suspense fallback={<section/>}>	
 				{routes.map(({path, Component}) => (
 					<Route key={path} exact path={path}>
 						<Component />
 					</Route>
 				))}
+				</Suspense>
 				<Redirect to={'/history'}/>
 			</Switch>
 		</main>
 	)
 }
 
-ReactDOM.render(<App/>, document.querySelector('#root'));
+import('react-dom').then(({default: ReactDOM}) => {
+	ReactDOM.render(<App/>, document.querySelector('#root'));
+});
