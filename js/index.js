@@ -1,3 +1,6 @@
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
+
 import React, {Suspense} from 'react';
 import {Link, Route, Switch, BrowserRouter, Redirect} from 'react-router-dom';
 import routes from './routes';
@@ -63,11 +66,17 @@ const Main = () => {
 		<main>
 			<Switch>
 				<Suspense fallback={<section/>}>	
-				{routes.map(({path, Component}) => (
-					<Route key={path} exact path={path}>
-						<Component />
-					</Route>
-				))}
+				{
+					routes.map(({path, Component}) =>
+						<Route key={path} exact path={path}
+							render={({match}) => {
+								console.log(match);
+								return <Component/>
+							}}
+						/>
+						
+					)
+				}
 				</Suspense>
 				<Redirect to={'/history'}/>
 			</Switch>
