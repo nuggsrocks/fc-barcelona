@@ -1,11 +1,12 @@
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
-
 import '../scss/index.scss';
 
 const init = async () => {
 	try {
 		const {default: React, Suspense} = await import('react');
+
+		const {default: ReactDOM} = await import('react-dom');
 
 		const {Link, BrowserRouter, Switch, Route, Redirect} = await import('react-router-dom');
 
@@ -77,10 +78,7 @@ const init = async () => {
 							{
 								routes.map(({path, Component}) =>
 									<Route key={path} exact path={path}
-										   render={({match}) => {
-											   console.log(match);
-											   return <Component/>
-										   }}
+										   render={() => <Component/>}
 									/>
 
 								)
@@ -94,9 +92,9 @@ const init = async () => {
 			)
 		}
 
-		import('react-dom').then(({default: ReactDOM}) => {
-			ReactDOM.render(<App/>, document.querySelector('#root'));
-		});
+
+		ReactDOM.render(<App/>, document.querySelector('#root'));
+
 	} catch (e) {
 		console.log(e);
 	}
