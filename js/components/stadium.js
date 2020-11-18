@@ -1,6 +1,6 @@
 import React from "react";
 
-const Stadium = () => {
+export const Stadium = () => {
     return (
         <section>
             <h2>
@@ -83,5 +83,3 @@ const Stadium = () => {
         </section>
     )
 };
-
-export default Stadium;

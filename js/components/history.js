@@ -1,6 +1,6 @@
 import React from "react";
 
-const History = () => {
+export const History = () => {
     return (
         <section>
             <h2>
@@ -113,5 +113,3 @@ const History = () => {
         </section>
     )
 };
-
-export default History;

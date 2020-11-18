@@ -8,13 +8,11 @@
   },
   "scripts": {
     "build:dev": "rm -rf public;webpack --config webpack.dev.js",
-    "build:test": "rm -rf public;webpack --config webpack.dev.js",
     "build:prod": "rm -rf public;webpack --config webpack.prod.js",
     "start:dev": "pm2 start ecosystem.config.js",
     "start:test": "pm2 start ecosystem.config.js --env=test",
     "start": "node server.js",
-    "heroku-postbuild": "npm run build:prod",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "heroku-postbuild": "npm run build:prod"
   },
   "author": "Matthew Fisher <nuggsrocks@yahoo.com>",
   "license": "ISC",

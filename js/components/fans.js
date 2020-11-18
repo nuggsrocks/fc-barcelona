@@ -1,6 +1,6 @@
 import React from "react";
 
-const Fans = () => {
+export const Fans = () => {
     return (
         <section>
             <h2>
@@ -27,5 +27,3 @@ const Fans = () => {
         </section>
     )
 };
-
-export default Fans;

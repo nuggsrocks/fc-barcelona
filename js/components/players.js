@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Players = () => {
+export const Players = () => {
 	
 	return (
 		<section>
@@ -37,5 +37,3 @@ const Players = () => {
 		</section>
 	)
 }
-
-export default Players;

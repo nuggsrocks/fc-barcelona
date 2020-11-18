@@ -1,6 +1,6 @@
 import React from "react";
 
-const Rivals = () => {
+export const Rivals = () => {
     return (
         <section>
             <h2>
@@ -26,5 +26,3 @@ const Rivals = () => {
         </section>
     )
 };
-
-export default Rivals;
