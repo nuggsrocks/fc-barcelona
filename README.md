@@ -1,3 +1,11 @@
 # fc-barcelona
 
-https://evening-thicket-63086.herokuapp.com/
+first clone this repository
+
+then navigate to directory and run:
+
+````
+npm install && npm run build:prod
+````
+
+the compiled html will be in the ````/public```` directory
