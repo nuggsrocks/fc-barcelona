@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
 export const Fans = () => {
-    return (
+  return (
         <section>
             <h2>
                 Fans
@@ -25,5 +25,5 @@ export const Fans = () => {
             </p>
             <footer>Fan Nicknames: Cul&eacute;s, Barcelonistas, Blaugranes, Azulgranas</footer>
         </section>
-    )
-};
+  )
+}

@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
 export const Rivals = () => {
-    return (
+  return (
         <section>
             <h2>
                 Rivalries
@@ -24,5 +24,5 @@ export const Rivals = () => {
             </p>
             <footer>Barcelona has 96 wins all-time in competitive <em>El Cl&aacute;sico</em> matches. Real Madrid has 146.</footer>
         </section>
-    )
-};
+  )
+}

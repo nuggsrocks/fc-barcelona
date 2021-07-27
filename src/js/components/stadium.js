@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
 export const Stadium = () => {
-    return (
+  return (
         <section>
             <h2>
                 Stadium
@@ -81,5 +81,5 @@ export const Stadium = () => {
             </p>
             <footer>The <em>Camp Nou</em> is currently the largest stadium in Europe, and the 11th largest in the world.</footer>
         </section>
-    )
-};
+  )
+}

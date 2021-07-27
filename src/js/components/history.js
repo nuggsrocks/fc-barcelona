@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
 export const History = () => {
-    return (
+  return (
         <section>
             <h2>
                 History
@@ -111,5 +111,5 @@ export const History = () => {
             </p>
             <footer>Founded 29 November, 1899</footer>
         </section>
-    )
-};
+  )
+}

@@ -15,7 +15,7 @@ describe('loadTextFiles()', () => {
       })
     }
 
-    const files = [{name: 'history', url: txt1}, {name: 'fans', url: txt2}]
+    const files = [{ name: 'history', url: txt1 }, { name: 'fans', url: txt2 }]
 
     const loaded = await loadTextFiles(mockFetch, files)
 
