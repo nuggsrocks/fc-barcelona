@@ -1,5 +1,7 @@
 export const formatText = (string = '') => {
-  const paragraphs = string.split('/n')
+  let paragraphs = string.split('\n')
 
-  return paragraphs.map(p => p.trim())
+  paragraphs = paragraphs.map(p => p.trim())
+
+  return paragraphs.filter(value => value !== '')
 }

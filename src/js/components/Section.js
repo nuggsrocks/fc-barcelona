@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-export const SectionView = ({ header = '', paragraphs = [''], footer = '' }) => {
+export const Section = ({ header = '', paragraphs = [''], footer = '' }) => {
   return (
     <section>
       <h2>{header}</h2>
@@ -11,7 +11,7 @@ export const SectionView = ({ header = '', paragraphs = [''], footer = '' }) => 
   )
 }
 
-SectionView.propTypes = {
+Section.propTypes = {
   header: PropTypes.string,
   paragraphs: PropTypes.arrayOf(PropTypes.string),
   footer: PropTypes.string
