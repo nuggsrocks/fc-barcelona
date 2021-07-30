@@ -1,15 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { SectionHeader } from './SectionHeader'
+import { SectionBody } from './SectionBody'
+import { SectionFooter } from './SectionFooter'
 
-export const Section = ({ header = '', paragraphs = [''], footer = '' }) => {
+export const Section = ({children}) => {
   return (
     <section>
-      <h2>{header}</h2>
-      {paragraphs.map((p, index) => <p key={index}>{p}</p>)}
-      <footer>{footer}</footer>
+      {children}
     </section>
   )
 }
+
+Section.Header = SectionHeader
+Section.Body = SectionBody
+Section.Footer = SectionFooter
 
 Section.propTypes = {
   header: PropTypes.string,

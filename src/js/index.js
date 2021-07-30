@@ -1,30 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import { App } from './app'
+import 'regenerator-runtime/runtime'
+import '../scss/index.scss'
+
+import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter, Link } from 'react-router-dom'
-import { getRoutes } from './getRoutes'
 
-const Index = () => {
-  const [routes, setRoutes] = useState([])
+import { App } from './App'
 
-  useEffect(() => {
-    if (routes === []) {
-      getRoutes().then(routes => setRoutes(routes))
-    }
-  })
+import { BrowserRouter } from 'react-router-dom'
 
-  return (
-    <BrowserRouter>
-      <nav>
-        {
-          routes.map((route, index) =>
-            <Link to={route.path} key={index}>{route.name}</Link>
-          )
-        }
-      </nav>
-      <App routes={routes}/>
-    </BrowserRouter>
-  )
-}
-
-ReactDOM.render(<Index/>, document.querySelector('#root'))
+ReactDOM.render(<BrowserRouter><App/></BrowserRouter>, document.querySelector('#root'))

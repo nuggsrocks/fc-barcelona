@@ -6,8 +6,8 @@ $gray: lightgray;
 
 body {
 	background-color: $gray;
-	margin: 50px;
 	font-family: 'Open Sans', sans-serif;
+	margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,222 +18,66 @@ h1, h2, h3, h4, h5, h6 {
 div#root {
 	display: flex;
 
-	flex-flow: row nowrap;
-	
-	* {
+	div.divider {
+		background-color: $red;
+		margin: 2rem 1rem;
+		flex: 1 0 1rem;
 		border-radius: 10px;
 	}
-	
 
-	header {
-		flex: 0 1 20vw;
+	nav {
+		flex: 1 0 20vw;
+		height: calc(100vh - 4rem);
+		margin: 2rem;
 
-		text-align: center;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
 
 		img {
 			max-width: 100%;
+			height: auto;
 		}
 
-		h1 {
+		.nav-link {
+			flex: 0 1 100%;
+			text-decoration: none;
+			font-size: 2rem;
+			font-family: 'Playfair Display', serif;
+			border-radius: 10px;
+
+			&:hover {
+				color: white;
+				background-color: $blue;
+			}
+		}
+	}
+
+	section {
+		margin: 2rem;
+
+		.section-header {
 			font-size: 3rem;
-		
-			color: $blue;
+			color: $red;
 		}
 
-		button {
-			display: none;
+		.section-body {
+			font-size: 1.25rem;
+			line-height: 2.5rem;
 		}
 
-		nav {
-			a {
-				font-family: 'Playfair Display', serif;
-				display: block;
-				padding: 10px 0;
-				margin: 5px 0;
-				text-decoration: none;
-				font-size: 2rem;
-				color: $red;
-
-
-
-
-				&:hover {
-					color: white;
-					background-color: $blue;
-				}
-
-				&:active {
-					color: white;
-					background-color: $red;
-				}
-			}
-		}
-	}
-
-	div.divider {
-		background-color: $red;
-		margin: 10px;
-		flex: 0 1 1px;
-	}
-
-	main {
-		section {
+		.section-footer {
+			display: inline-block;
+			font-family: monospace;
+			font-size: 1.25rem;
+			line-height: 2rem;
+			background-color: $yellow;
 			padding: 0 20px;
-
-			h2 {
-				font-size: 2.5rem;
-				color: $red;
-			}
-
-			h3 {
-				font-size: 2rem;
-			}
-
-			p {
-				font-size: 1.25rem;
-				line-height: 2.5rem;
-
-				em {
-					font-style: normal;
-					font-weight: bold;
-					color: $blue;
-				}
-			}
-
-			footer {
-				display: inline-block;
-				font-family: monospace;
-				font-size: 1.25rem;
-				line-height: 2rem;
-				background-color: $yellow;
-				padding: 0 20px;
-			}
+			border-radius: 10px;
 		}
 	}
 
-}
-
-@media screen and (max-width: 50rem) {
-	body {
-		margin: 20px;
-	}
-
-	div#root {
-
-		flex-flow: row wrap;
-
-		header {
-			flex: 1 0 100%;
-
-			button {
-				margin-top: 10px;
-				display: inline-block;
-				width: 20%;
-				color: $red;
-				background-color: transparent;
-				border: none;
-				font-size: 2rem;
-			}
-
-
-
-
-			
-
-			nav {
-				height: 0;
-				background-color: $red;
-
-				display: flex;
-				flex-flow: row wrap;
-
-				overflow: hidden;
-
-
-				transition: height 300ms;
-
-				a {
-					color: $gray;
-					border-radius: 0;
-					font-size: 3rem;
-					line-height: 3rem;
-					margin: 0;
-
-
-
-					flex: 0 1 100%;
-
-
-					&:nth-child(1) {
-						border-radius: 10px 10px 0 0;
-					}
-
-					&:nth-last-child(1) {
-						border-radius: 0 0 10px 10px;
-					}
-				}
-
-
-
-
-				&.active {
-					height: calc(15rem + 100px);
-				}
-			}
-
-
-			
-		}
-
-
-		div.divider {
-			display: block;
-			flex: 1;
-			height: 1px;
-		}
-
-
-		main {
-			section {
-				text-align: center;
-
-				padding: 0;
-
-				margin: 0;
-
-				h2 {
-					font-size: 3.5rem;
-				}
-
-
-			}
-		}
-
-	}
-}
-
-
-@media screen and (max-width: 50rem) and (min-width: 30rem) {
-	div#root {
-
-		header {
-			img {
-				max-width: 60%;
-
-			}
-
-
-
-			h1 {
-				font-size: 6rem;
-			}
-		}
-	}
-}
-
-
-@media screen and (max-width: 30rem) {
-	
 }
 
 
