@@ -17,9 +17,9 @@ export const RivalsView = () => {
         Catalans historically being against it.
       </p>
       <p>
-        Barça's local rival has always been Espanyol. Being one of the clubs
+        Barça&apos;s local rival has always been Espanyol. Being one of the clubs
         granted royal patronage, Espanyol was founded exclusively by Spanish
-        football fans, unlike the multinational nature of Barça's formation.
+        football fans, unlike the multinational nature of Barça&apos;s formation.
         This led to a strengthened rivalry due to the Barcelonistas’ hatred and
         distrust of the Spanish crown. Meanwhile, the founding message of
         Espanyol was clearly anti-Barcelona, and they have disapprovingly viewed

@@ -7,7 +7,7 @@ export const Menu = () => {
   return <nav>
     <img src={logo} alt={'FC Barcelona shield'}/>
     {
-      routes.map(({name, path}, index) =>
+      routes.map(({ name, path }, index) =>
         <Link to={path} key={index} className={'nav-link'}>{name}</Link>
       )
     }

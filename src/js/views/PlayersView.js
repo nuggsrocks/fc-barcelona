@@ -10,7 +10,7 @@ export const PlayersView = () => {
         squad list includes only the principal nationality of each player;
         several non-European players on the squad have dual citizenship with an
         EU country. Barcelona has employed many famous players, with five FIFA
-        World Player of the Year award winners and six Ballon d'Or winners among
+        World Player of the Year award winners and six Ballon d&apos;Or winners among
         the previous and current Barcelona players. This makes Barça the club
         with the most top player awards received all-time. In 2009, Barcelona
         won an unprecedented sextuple by winning La Liga, the Copa del Rey, the
