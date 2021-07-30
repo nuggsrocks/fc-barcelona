@@ -1,10 +1,9 @@
 export const loadTextFiles = async (fetch, files) => {
-  const loaded = []
+  const loaded = {}
 
-  for (const file of files) {
-    const res = await fetch(file.url)
-    const text = await res.text()
-    loaded.push({ name: file.name, text })
+  for (const key in files) {
+    const res = await fetch(files[key])
+    loaded[key] = await res.text()
   }
 
   return loaded

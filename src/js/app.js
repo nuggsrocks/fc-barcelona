@@ -2,18 +2,20 @@ import 'core-js/stable'
 import 'regenerator-runtime/runtime'
 import '../scss/index.scss'
 
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import { FansView } from './views/FansView'
 
-export const App = () => {
-
+export const App = ({routes}) => {
   return (
     <main>
       <Switch>
-        <Route path={'/fans'}>
-          <FansView/>
-        </Route>
+        {
+          routes.map((route, index) =>
+            <Route exact path={route.path} key={index}>
+              {route.view}
+            </Route>
+          )
+        }
       </Switch>
     </main>
   )
