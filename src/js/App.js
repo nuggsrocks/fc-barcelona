@@ -1,20 +1,11 @@
 import React, { Fragment } from 'react'
-import { Switch, Route } from 'react-router-dom'
-import { routes } from './routes'
 import { Menu } from './components/Menu'
+import { Main } from './components/Main'
 
 export const App = () => {
   return <Fragment>
     <Menu/>
     <div className={'divider'}/>
-    <Switch>
-      {
-        routes.map(({ path, Component }, index) =>
-          <Route exact path={path} key={index}>
-            <Component/>
-          </Route>
-        )
-      }
-    </Switch>
+    <Main/>
   </Fragment>
 }
