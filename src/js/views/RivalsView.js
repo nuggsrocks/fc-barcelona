@@ -1,10 +1,13 @@
 import React from 'react'
-import { Section } from '../components/Section'
+import { View } from '../components/View'
+import { Header } from '../components/Header'
+import { Body } from '../components/Body'
+import { Footer } from '../components/Footer'
 
 export const RivalsView = () => {
-  return <Section>
-    <Section.Header>Rivals</Section.Header>
-    <Section.Body>
+  return <View>
+    <Header>Rivals</Header>
+    <Body>
       <p>
         There is often a fierce rivalry between the two strongest teams in a
         national league, and this is particularly the case in La Liga, where the
@@ -26,8 +29,8 @@ export const RivalsView = () => {
         FC Barcelona as a team of foreigners. The rivalry is known as El Derbi
         Barceloní.
       </p>
-    </Section.Body>
-    <Section.Footer>Barcelona has 96 wins all-time in competitive El Clásico
-      matches. Real Madrid has 146.</Section.Footer>
-  </Section>
+    </Body>
+    <Footer>Barcelona has 96 wins all-time in competitive El Clásico
+      matches. Real Madrid has 146.</Footer>
+  </View>
 }

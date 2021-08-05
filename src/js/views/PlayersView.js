@@ -1,10 +1,13 @@
 import React from 'react'
-import { Section } from '../components/Section'
+import { View } from '../components/View'
+import { Header } from '../components/Header'
+import { Body } from '../components/Body'
+import { Footer } from '../components/Footer'
 
 export const PlayersView = () => {
-  return <Section>
-    <Section.Header>Players</Section.Header>
-    <Section.Body>
+  return <View>
+    <Header>Players</Header>
+    <Body>
       <p>
         Spanish teams are limited to three players without EU citizenship. The
         squad list includes only the principal nationality of each player;
@@ -19,7 +22,7 @@ export const PlayersView = () => {
         their players and their coach were voted onto the UEFA Team of the Year
         2009.
       </p>
-    </Section.Body>
-    <Section.Footer>Current Manager: Ronald Koeman</Section.Footer>
-  </Section>
+    </Body>
+    <Footer>Current Manager: Ronald Koeman</Footer>
+  </View>
 }

@@ -1,10 +1,13 @@
 import React from 'react'
-import { Section } from '../components/Section'
+import { View } from '../components/View'
+import { Header } from '../components/Header'
+import { Body } from '../components/Body'
+import { Footer } from '../components/Footer'
 
 export const FansView = () => {
-  return <Section>
-    <Section.Header>Fans</Section.Header>
-    <Section.Body>
+  return <View>
+    <Header>Fans</Header>
+    <Body>
       <p>
         The nickname &quot;culé&quot; for a Barcelona supporter is derived from
         the Catalan &quot;cul&quot; (English: arse), as the spectators at the
@@ -26,8 +29,7 @@ export const FansView = () => {
         among sports teams, with over 103 million Facebook fans as of December
         2017, just behind Real Madrid.
       </p>
-    </Section.Body>
-    <Section.Footer>Fan Nicknames: Culés, Barcelonistas, Blaugranes,
-      Azulgranas</Section.Footer>
-  </Section>
+    </Body>
+    <Footer>Fan Nicknames: Culés, Barcelonistas, Blaugranes, Azulgranas</Footer>
+  </View>
 }

@@ -1,10 +1,13 @@
 import React from 'react'
-import { Section } from '../components/Section'
+import { View } from '../components/View'
+import { Header } from '../components/Header'
+import { Body } from '../components/Body'
+import { Footer } from '../components/Footer'
 
 export const HistoryView = () => {
-  return <Section>
-    <Section.Header>History</Section.Header>
-    <Section.Body>
+  return <View>
+    <Header>History</Header>
+    <Body>
       <p>
         In 1899, football pioneer Joan Gamper decided he wanted to form a
         football club. After eleven other enthusiasts responded to his newspaper
@@ -108,7 +111,7 @@ export const HistoryView = () => {
         in the years that followed, they claimed an additional two La Ligas, one
         Copa del Rey and the 2015 Champions League.
       </p>
-    </Section.Body>
-    <Section.Footer>Founded 29 November, 1899</Section.Footer>
-  </Section>
+    </Body>
+    <Footer>Founded 29 November, 1899</Footer>
+  </View>
 }

@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-export const SectionFooter = ({ children }) => {
+export const Footer = ({ children }) => {
   return <footer className={'section-footer'}>{children}</footer>
 }
 
-SectionFooter.propTypes = {
+Footer.propTypes = {
   children: PropTypes.any
 }

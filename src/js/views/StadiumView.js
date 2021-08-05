@@ -1,10 +1,13 @@
 import React from 'react'
-import { Section } from '../components/Section'
+import { View } from '../components/View'
+import { Header } from '../components/Header'
+import { Body } from '../components/Body'
+import { Footer } from '../components/Footer'
 
 export const StadiumView = () => {
-  return <Section>
-    <Section.Header>Stadium</Section.Header>
-    <Section.Body>
+  return <View>
+    <Header>Stadium</Header>
+    <Body>
       <p>
         In terms of FC Barcelona, the club’s history can be clearly be divided
         into three main stages. In the early days, the club constantly switched
@@ -88,8 +91,8 @@ export const StadiumView = () => {
         the century was out the standing areas were turned into seating thus
         reducing the stadium’s capacity to its present day figure of 99,000.
       </p>
-    </Section.Body>
-    <Section.Footer>The Camp Nou is currently the largest stadium in Europe, and
-      the 11th largest in the world.</Section.Footer>
-  </Section>
+    </Body>
+    <Footer>The Camp Nou is currently the largest stadium in Europe, and
+      the 11th largest in the world.</Footer>
+  </View>
 }

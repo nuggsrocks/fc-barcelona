@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-export const SectionBody = ({ children }) => {
+export const Body = ({ children }) => {
   return <div className={'section-body'}>
     {children}
   </div>
 }
 
-SectionBody.propTypes = {
+Body.propTypes = {
   children: PropTypes.any
 }
