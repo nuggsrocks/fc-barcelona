@@ -2,7 +2,6 @@ import React from 'react'
 import { routes } from '../routes'
 import { Route, Switch } from 'react-router-dom'
 
-
 export const Main = () => {
   return (
     <Switch>
