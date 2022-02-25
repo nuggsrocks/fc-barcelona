@@ -1,5 +1,5 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './src/js/index.js',
@@ -18,22 +18,15 @@ module.exports = {
         test: /\.html$/,
         loader: 'html-loader'
       },
-
       {
         test: /\.(jpe?g|png|svg|gif|wav|mp3|txt)/,
-        loader: 'file-loader'
+        type: 'asset'
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
-      filename: 'index.html',
-      favicon: './src/img/icon.png',
-      meta: {
-        charset: 'utf-8',
-        viewport: 'width=device-width,initial-scale=1.0'
-      }
+      template: './src/index.html'
     })
   ]
 }
