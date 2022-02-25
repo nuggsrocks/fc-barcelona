@@ -9,8 +9,7 @@
   "scripts": {
     "build:dev": "webpack serve --config webpack.dev.js",
     "build:prod": "rm -rf public && webpack --config webpack.prod.js",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint": "eslint --fix .;standard --fix"
   },
   "author": "nuggsrocks <nuggsrocks@yahoo.com> (https://github.com/nuggsrocks/)",
   "license": "ISC",
@@ -41,6 +40,7 @@
     "prop-types": "^15.8.1",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0",
+    "standard": "^16.0.4",
     "style-loader": "^3.3.1",
     "webpack": "^5.69.1",
     "webpack-cli": "^4.9.2",

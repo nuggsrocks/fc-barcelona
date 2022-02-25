@@ -6,4 +6,6 @@ public/
 
 ecosystem.config.js
 
+# ide
 .idea/
+.vscode/

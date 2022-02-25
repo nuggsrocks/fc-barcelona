@@ -8,7 +8,7 @@ export const Main = () => {
       {
         routes.map(({ path, Component }, index) =>
           <Route exact path={path} key={index}>
-            <Component/>
+            <Component />
           </Route>
         )
       }
