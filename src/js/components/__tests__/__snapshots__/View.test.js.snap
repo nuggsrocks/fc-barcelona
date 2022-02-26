@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<View/> should render given text to dom within section element with seperate paragraph elements for each new line 1`] = `
+<body>
+  <div>
+    <section>
+      <h1 />
+      <p>
+        foo bar
+      </p>
+      <p>
+        lorem ipsum
+      </p>
+      <p>
+        barfoo
+      </p>
+    </section>
+  </div>
+</body>
+`;
+
+exports[`<View/> should render given title to dom within h2 element 1`] = `
+<body>
+  <div>
+    <section>
+      <h1>
+        this is a title
+      </h1>
+    </section>
+  </div>
+</body>
+`;

@@ -1,20 +1,25 @@
-import React, { useEffect, useRef } from 'react'
-import animate from 'animate'
+import React from 'react'
 import PropTypes from 'prop-types'
 
-export const View = ({ children }) => {
-  const ref = useRef()
-  useEffect(() => {
-    animate.fadeIn(ref.current, 500)
-  })
-
+export const View = ({ title, text }) => {
   return (
-    <section ref={ref} style={{ opacity: '0' }}>
-      {children}
+    <section>
+      <h1>{title}</h1>
+      {
+        text.split('\n').filter(x => x !== '').map((paragraph, index) => {
+          return <p key={index}>{paragraph}</p>
+        })
+      }
     </section>
   )
 }
 
+View.defaultProps = {
+  title: '',
+  text: ''
+}
+
 View.propTypes = {
-  children: PropTypes.any
+  title: PropTypes.string,
+  text: PropTypes.string
 }
