@@ -8,4 +8,8 @@ import { App } from './App'
 
 import { BrowserRouter } from 'react-router-dom'
 
-ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.querySelector('#root'))
+import { getRoutes } from './getRoutes'
+
+getRoutes().then(routes => {
+    ReactDOM.render(<BrowserRouter><App routes={routes}/></BrowserRouter>, document.querySelector('#root'))
+})
