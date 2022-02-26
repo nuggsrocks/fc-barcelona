@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 
 export const View = ({ title, text }) => {
+  const paragraphs = text.split('\n').filter(x => x !== '')
   return (
     <section>
       <h1>{title}</h1>
       {
-        text.split('\n').filter(x => x !== '').map((paragraph, index) => {
+        paragraphs.map((paragraph, index) => {
+          if (index === paragraphs.length - 1) {
+            return <footer key={index}>{paragraph}</footer>
+          }
           return <p key={index}>{paragraph}</p>
         })
       }

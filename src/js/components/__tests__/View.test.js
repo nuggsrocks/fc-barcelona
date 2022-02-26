@@ -3,7 +3,7 @@ import { render } from '@testing-library/react'
 import { View } from '../View'
 
 describe('<View/>', () => {
-    it('should render given text to dom within section element with seperate paragraph elements for each new line', () => {
+    it('should render given text to dom within section element with seperate paragraph elements for each new line, and the last paragraph in a footer element', () => {
         const mockText = 'foo bar\nlorem ipsum\n\nbarfoo'
 
         render(<View text={mockText}/>)

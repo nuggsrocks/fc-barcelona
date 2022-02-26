@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<View/> should render given text to dom within section element with seperate paragraph elements for each new line 1`] = `
+exports[`<View/> should render given text to dom within section element with seperate paragraph elements for each new line, and the last paragraph in a footer element 1`] = `
 <body>
   <div>
     <section>
@@ -11,9 +11,9 @@ exports[`<View/> should render given text to dom within section element with sep
       <p>
         lorem ipsum
       </p>
-      <p>
+      <footer>
         barfoo
-      </p>
+      </footer>
     </section>
   </div>
 </body>
