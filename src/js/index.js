@@ -11,5 +11,5 @@ import { BrowserRouter } from 'react-router-dom'
 import { getRoutes } from './getRoutes'
 
 getRoutes().then(routes => {
-    ReactDOM.render(<BrowserRouter><App routes={routes}/></BrowserRouter>, document.querySelector('#root'))
+  ReactDOM.render(<BrowserRouter><App routes={routes} /></BrowserRouter>, document.querySelector('#root'))
 })

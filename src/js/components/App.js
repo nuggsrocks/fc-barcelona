@@ -7,11 +7,11 @@ import PropTypes from 'prop-types'
 export const App = ({ routes }) => {
   return (
     <>
-      <Nav routes={routes}/>
+      <Nav routes={routes} />
       <Routes>
         {
-          routes.map(({name, path, text }, index) => {
-            return <Route key={index} path={path} element={<View title={name} text={text}/>}/>
+          routes.map(({ name, path, text }, index) => {
+            return <Route key={index} path={path} element={<View title={name} text={text} />} />
           })
         }
       </Routes>
