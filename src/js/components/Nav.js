@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
-export const Nav = ({ routes }) => {
+export const Nav = ({ routes, Link }) => {
   const logoSrc = 'icon.png'
   return (
     <nav>
@@ -17,5 +16,6 @@ export const Nav = ({ routes }) => {
 }
 
 Nav.propTypes = {
-  routes: PropTypes.arrayOf(PropTypes.object)
+  routes: PropTypes.arrayOf(PropTypes.object),
+  Link: PropTypes.object
 }
