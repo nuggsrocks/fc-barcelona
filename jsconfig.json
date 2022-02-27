@@ -1,13 +1,16 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "target": "es2020",
         "jsx": "preserve",
-        "strictFunctionTypes": true
+        "strictFunctionTypes": true,
+        "noEmit": true
     },
     "exclude": [
         "node_modules",
         "**/node_modules/*",
         "dist"
-    ]
+    ],
+    "typingOptions": {
+        "enableAutoDiscovery": true
+      }
 }

@@ -3,7 +3,7 @@ const commonConfig = require('./webpack.common.js')
 
 module.exports = merge(commonConfig, {
   mode: 'development',
-  devtool: 'eval',
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {

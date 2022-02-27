@@ -19,14 +19,14 @@ module.exports = {
         loader: 'html-loader'
       },
       {
-        test: /\.(jpe?g|png|svg|gif|wav|mp3|txt)/,
+        test: /\.(jpe?g|png|ico|svg|gif|wav|mp3|txt)/,
         type: 'asset'
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './views/index.html'
     })
   ]
 }

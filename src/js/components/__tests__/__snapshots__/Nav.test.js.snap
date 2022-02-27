@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Nav/> should render logo in img element with links for each route 1`] = `
+<body>
+  <div>
+    <nav>
+      <img
+        alt="FC Barcelona shield"
+        src="icon.png"
+      />
+      <a
+        class="nav-link"
+        href="/bar"
+      >
+        foo
+      </a>
+    </nav>
+  </div>
+</body>
+`;

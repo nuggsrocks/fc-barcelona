@@ -17,7 +17,6 @@ h1, h2, h3, h4, h5, h6 {
 
 div#root {
 	display: flex;
-
 	margin: 1rem;
 
 	div.divider {
@@ -49,8 +48,7 @@ div#root {
 			font-family: 'Playfair Display', serif;
 			border-radius: 10px;
 
-			text-align: center;
-
+			transition: all 250ms;
 
 			&:hover {
 				color: white;
@@ -62,23 +60,23 @@ div#root {
 	section {
 		margin: 2rem;
 
-		.section-header {
+		h1 {
 			font-size: 3rem;
 			color: $red;
 		}
 
-		.section-body {
+		p {
 			font-size: 1.25rem;
 			line-height: 2.5rem;
 		}
 
-		.section-footer {
+		footer {
 			display: inline-block;
 			font-family: monospace;
-			font-size: 1.25rem;
+			font-size: 1rem;
 			line-height: 2rem;
 			background-color: $yellow;
-			padding: 0 20px;
+			padding: 0 1rem;
 			border-radius: 10px;
 		}
 	}
